@@ -1,0 +1,91 @@
+/* background #e7ecea */
+/*font #74777b */
+
+@font-face {
+  font-family: "pirate";
+  src: url("Blackpearl-vPxA.ttf");
+}
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+  background-color: #833471;
+}
+
+header {
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+  color: #b3b9c2;
+  font-family: "pirate", cursive;
+}
+
+footer {
+  padding: 5%;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  font-size: 25px;
+}
+
+textarea {
+  border: 2px solid #c28b24;
+  border-radius: 10px;
+  width: 100%;
+  background-color: #e7ecea;
+  font-size: large;
+  padding: 10px;
+}
+
+.content {
+  margin: auto;
+  width: 500px;
+}
+
+#output {
+  margin-top: 40px;
+  padding-left: 10px;
+  border: 2px solid #c28b24;
+  background-color: #e7ecea;
+  border-radius: 20px;
+  font-size: large;
+  min-height: 10vh;
+  max-height: 20vh;
+}
+
+button {
+  color: white;
+  width: 200px;
+  margin-left: 30%;
+  margin-top: 10%;
+  padding: 10px;
+  background-color: #8f6d2d;
+  font-size: large;
+  border: 2px solid #c28b24;
+}
+
+@media only screen and (max-width: 480px) {
+  textarea,
+  #output {
+    width: 80%;
+    margin-left: 50px;
+  }
+  button {
+    margin-left: 80px;
+    width: 70%;
+    padding: 20px;
+  }
+  header {
+    font-size: 30px;
+    margin-left: 90px;
+  }
+  footer {
+    visibility: hidden;
+  }
+}
